@@ -1,0 +1,24 @@
+/** This is a comment that the browser will ignore,
+* Put your CSS code into this file
+*/
+
+h1{
+    /**Changes text color to blue*/
+    color: green;
+    /**sets font to san-serif*/
+    font-family: sans-serif; 
+    /**sets font size to 50px */
+    font-size: 50px;
+}
+
+.thumbnail_img{
+    max-height: 150px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.main_img{
+    max-height: 400px;
+    max-width: 100%;
+    display:block;
+    margin:auto;
+}

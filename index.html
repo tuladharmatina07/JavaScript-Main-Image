@@ -1,0 +1,76 @@
+<html>
+    <head>
+    <!-- to use jQuery we need to import it like this -->
+   <script src=" http://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <!-- import bootstrap -->
+   <link rel="stylesheet"
+        type="text/css"
+        href="bootstrap.css"
+        />  
+    <!-- import css file -->   
+   <link rel="stylesheet" 
+        href="styles.css" 
+        type="text/css"/>
+        
+		
+    <style>
+    </style>
+    </head>
+
+    <body>
+        <!--These are thumbnails
+            Used bootstrap grid
+            class "thumbnail_img is used 
+            which are used in css and javascript-->
+            <div class="container">
+        <h1>Image Gallery</h1>
+        <div class= "row">
+        <div class="col-md-3">
+            <img class = "thumbnail_img" src ="img_1.jpg" 
+            alt="image"/>
+        </div>
+        <div class="col-md-3">
+            <img class = "thumbnail_img" src ="img_2.jpg"
+            alt="image2" />
+        </div>
+        <div class="col-md-3">
+            <img class = "thumbnail_img" src ="img_3.jpg" 
+            alt="image3"/>
+        </div>  
+        <div class="col-md-3">
+                <img class = "thumbnail_img" src ="img_4.jpg" 
+                alt="image4"/>
+            </div>   
+        </div>
+
+        <!--These are Large image
+            Used bootstrap grid
+            class "main_img" and id "large_img" is used 
+            which are used in css and javascript-->
+        <div class="row">
+            <div class="col-md-12">
+                <img id="large_img" class ="main_img"src="img_1.jpg" alt="large_image"/>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- This is the javascript code.
+            when we click on the thumbnail
+            we set the src attribute of the 
+            bit image to be the same as the 
+            src of the image we have clicked on
+            ("this"). This loads the same
+            image file into the big image-->
+            
+        <script type="text/javascript">
+        $(".thumbnail_img").click(function(){
+            $("#large_img").attr('src',
+            $(this).attr('src'));
+
+        });
+        
+        </script>
+      </body>
+
+</html>
